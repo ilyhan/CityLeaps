@@ -1,0 +1,19 @@
+@use "@/common/styles/mixin.scss" as *;
+@use "@/common/styles/styleConstants" as *;
+
+.calculator {
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: $color-total-white;
+    border-radius: $border-radius-m;
+    box-shadow: $shadow-def;
+
+    &__title{
+        @include clampText($text-m-title, $text-title);
+    }
+
+    &__description{
+        margin-bottom: 20px;
+    }
+}

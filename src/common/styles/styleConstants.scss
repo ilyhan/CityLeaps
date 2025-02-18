@@ -16,8 +16,8 @@ $color-hover-blue: rgba(120, 150, 190, 1);
 $color-disabled-blue: rgba(170, 150, 180, 1);
 
 //font-sizes in px
-$text-title: 34;
-$text-m-title: 26;
+$text-title: 30;
+$text-m-title: 24;
 
 $text-large: 20;
 $text-m-large: 16;
@@ -31,4 +31,7 @@ $border-radius-s: 7px;
 
 //transitions
 $transition-medium: all 0.3s ease;
+
+//shadow
+$shadow-def: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
