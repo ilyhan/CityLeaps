@@ -1,0 +1,34 @@
+@use "@/common/styles/mixin.scss" as *;
+@use "@/common/styles/styleConstants" as *;
+
+.button {
+    @include flexCenter;
+    @include clampText($text-m-main, $text-main);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 18px;
+    border-radius: $border-radius-s;
+    color: $color-total-white;
+    background-color: $color-blue;
+    padding: 11px 32px;
+    width: fit-content;
+    transition: $transition-medium;
+
+
+    @media(hover: hover) {
+        &:hover {
+            background-color: $color-hover-blue;
+        }
+    }
+
+    &:not(:disabled):active {
+        scale: 0.98;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        background-color: $color-disabled-blue;
+    }
+}

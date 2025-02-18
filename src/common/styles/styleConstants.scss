@@ -1,9 +1,19 @@
 //colors 
 //black 
 $color-total-black: rgba(0, 0, 0, 1);
+$color-dark-label: rgba(28, 30, 44, 1);
 //white 
 $color-total-white: rgba(255, 255, 255, 1);
-$color-background: rgba(245, 244, 255, 1);
+$color-background: rgba(250, 245, 255, 1);
+$color-soft-white: rgba(244, 244, 244, 1);
+//grey 
+$color-medium-grey: rgba(128, 128, 128, 1);
+$color-medium-gre-tr: rgba(128, 128, 128, 0.2);
+//blue
+$color-blue: rgba(10, 60, 255, 1);
+$color-input-focus: rgba(85, 55, 215, 1);
+$color-hover-blue: rgba(120, 150, 190, 1);
+$color-disabled-blue: rgba(170, 150, 180, 1);
 
 //font-sizes in px
 $text-title: 34;
@@ -14,6 +24,10 @@ $text-m-large: 16;
 
 $text-main: 16;
 $text-m-main: 14;
+
+//borders
+$border-radius-m: 10px;
+$border-radius-s: 7px;
 
 //transitions
 $transition-medium: all 0.3s ease;
