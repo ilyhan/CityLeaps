@@ -4,14 +4,12 @@ import Label from "@/common/ui/label/Label";
 
 interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
     label?: string;
-    isRequired?: boolean;
     containerClass?: string;
 };
 
 const Input = forwardRef<HTMLInputElement, IInputProps>(
     ({
         label,
-        isRequired = false,
         containerClass = "",
         ...props
     }: IInputProps, ref: Ref<HTMLInputElement>) => {
