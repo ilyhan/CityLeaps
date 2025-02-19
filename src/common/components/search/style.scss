@@ -1,0 +1,33 @@
+@use "@/common/styles/mixin.scss" as *;
+@use "@/common/styles/styleConstants" as *;
+
+.search-city {
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__list {
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        background-color: $color-soft-white;
+        border-radius: $border-radius-m;
+        border: 1px solid $color-medium-gre-tr;
+        z-index: 5;
+    }
+
+    &__list-item {
+        @include clampText($text-m-main, $text-main);
+        padding: 10px 15px;
+        transition: $transition-medium;
+        border-radius: $border-radius-m;
+        cursor: pointer;
+
+        @media (hover: hover) {
+            &:hover{
+                background-color: $color-hover-white;
+            }
+        }
+    }
+}
