@@ -25,7 +25,7 @@ const Calculator = () => {
 
     return (
         <section className="calculator">
-            <h1 className="calculator__title">Рассчет расстояний</h1>
+            <h1 className="calculator__title">Расчет расстояний</h1>
 
             <p className="calculator__description">
                 Рассчитайте расстояние между городами России по прямой
@@ -58,7 +58,7 @@ const Calculator = () => {
                         Результат: {distance} км
                     </p>
                 }
-                
+
                 {error && <p className="calculator__error">{error}</p>}
             </div>
         </section>
