@@ -1,3 +1,4 @@
+@use "@/common/styles/styleConstants" as *;
 
 .header {
     padding: 15px;
@@ -6,5 +7,11 @@
 
     &__logo {
         height: 70px;
+    }
+}
+
+@media (max-width: $mobile) {
+    .header {
+        margin-bottom: 30px;
     }
 }
