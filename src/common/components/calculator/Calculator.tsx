@@ -4,6 +4,8 @@ import { FormEvent, useState } from "react";
 import { getDistance } from "@/common/utils/getDistance";
 import SearchCity from "@/common/components/search/SearchCity";
 import { ICity } from "@/common/interfaces/city";
+import History from "@/common/components/calculator/History";
+import { saveToHistory } from "@/common/utils/saveHistory";
 
 const Calculator = () => {
     const [firstCity, setFirstCity] = useState<ICity | undefined>();
@@ -15,7 +17,10 @@ const Calculator = () => {
         e.preventDefault();
 
         if (firstCity && secondCity) {
-            setDistance(getDistance(firstCity.lat, firstCity.lon, secondCity.lat, secondCity.lon));
+            const calculate = getDistance(firstCity.lat, firstCity.lon, secondCity.lat, secondCity.lon);
+            saveToHistory(firstCity.name, secondCity.name, calculate);
+
+            setDistance(calculate);
             setError(null);
         } else {
             setDistance(null);
@@ -61,7 +66,9 @@ const Calculator = () => {
 
                 {error && <p className="calculator__error">{error}</p>}
             </div>
-        </section>
+
+            <History />
+        </section >
     )
 };
 
