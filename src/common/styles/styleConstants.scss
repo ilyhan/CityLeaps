@@ -10,6 +10,7 @@ $color-hover-white: rgba(230, 230, 230, 1);
 //grey 
 $color-medium-grey: rgba(128, 128, 128, 1);
 $color-medium-gre-tr: rgba(128, 128, 128, 0.2);
+$color-details: rgba(123, 116, 84, 1);
 //blue
 $color-blue: rgba(10, 60, 255, 1);
 $color-input-focus: rgba(85, 55, 215, 1);
@@ -34,6 +35,7 @@ $border-radius-s: 7px;
 
 //transitions
 $transition-medium: all 0.3s ease;
+$transition-fast: all 0.2s ease;
 
 //shadow
 $shadow-def: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
